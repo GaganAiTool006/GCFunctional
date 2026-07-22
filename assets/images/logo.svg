@@ -1,0 +1,47 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients -->
+  <defs>
+    <linearGradient id="purpleBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c63ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6c4cff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="purpleDarkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a42d9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3730a3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main letter N with wallet icon -->
+  <g>
+    <!-- Left stroke of N -->
+    <rect x="30" y="40" width="20" height="110" rx="4" fill="url(#purpleDarkGradient)" />
+    
+    <!-- Diagonal of N -->
+    <path d="M 50 150 L 110 40" stroke="url(#purpleBlueGradient)" stroke-width="20" stroke-linecap="round" fill="none" />
+    
+    <!-- Right stroke of N -->
+    <rect x="100" y="40" width="20" height="110" rx="4" fill="url(#purpleBlueGradient)" />
+    
+    <!-- Wallet icon integrated with N -->
+    <!-- Wallet background -->
+    <rect x="85" y="65" width="70" height="50" rx="8" fill="url(#purpleBlueGradient)" opacity="0.2" stroke="url(#purpleBlueGradient)" stroke-width="2" />
+    
+    <!-- Wallet main body -->
+    <path d="M 95 75 Q 85 75 85 85 L 85 105 Q 85 115 95 115 L 145 115 Q 155 115 155 105 L 155 85 Q 155 75 145 75 Z" fill="url(#purpleBlueGradient)" />
+    
+    <!-- Wallet top flap -->
+    <path d="M 95 75 L 135 55 Q 145 50 150 60 L 155 75" fill="url(#purpleBlueGradient)" opacity="0.8" />
+    
+    <!-- Wallet card slot -->
+    <rect x="100" y="90" width="35" height="12" rx="2" fill="#fff" opacity="0.3" />
+    
+    <!-- Wallet coin/circle -->
+    <circle cx="130" cy="95" r="6" fill="#fff" opacity="0.5" />
+  </g>
+  
+  <!-- Optional: Add decorative dots -->
+  <circle cx="95" cy="70" r="2" fill="url(#purpleBlueGradient)" opacity="0.6" />
+  <circle cx="110" cy="105" r="2" fill="url(#purpleBlueGradient)" opacity="0.6" />
+</svg>
