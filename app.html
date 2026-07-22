@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — NexaPay</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="dashboard-body">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <a class="brand brand-light" href="#home"><span class="brand-mark">N</span><span>NexaPay</span></a>
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close sidebar">×</button>
+      </div>
+      <nav class="sidebar-nav" aria-label="Dashboard navigation">
+        <a href="#home" data-page="home"><span>⌂</span><span>Home</span></a>
+        <a href="#deposit" data-page="deposit"><span>↓</span><span>Deposit</span></a>
+        <a href="#withdraw" data-page="withdraw"><span>↑</span><span>Withdraw</span></a>
+        <a href="#trs" data-page="trs"><span>≋</span><span>TRS</span></a>
+        <a href="#tr" data-page="tr"><span>⇄</span><span>TR</span></a>
+        <a href="#profile" data-page="profile"><span>◎</span><span>Profile</span></a>
+      </nav>
+      <div class="sidebar-card">
+        <span>Available Balance</span>
+        <strong id="sidebarBalance">₹0.00</strong>
+        <a href="#deposit" data-page="deposit">Add funds →</a>
+      </div>
+      <button class="logout-button" id="logoutButton"><span>↪</span> Logout</button>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-button dashboard-menu" id="sidebarOpen" aria-label="Open sidebar">☰</button>
+          <div>
+            <span class="topbar-kicker" id="pageKicker">Overview</span>
+            <h1 id="pageTitle">Home</h1>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-button" id="themeToggle" aria-label="Toggle theme">◐</button>
+          <button class="notification-button" aria-label="Notifications">♢<span></span></button>
+          <button class="user-menu-button" id="profileShortcut">
+            <span class="avatar" id="topAvatar">NP</span>
+            <span class="user-copy"><strong id="topUserName">User</strong><small id="topUserEmail">user@example.com</small></span>
+          </button>
+        </div>
+      </header>
+
+      <section class="page-container" id="pageContent" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <div class="toast-container" id="toastContainer"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

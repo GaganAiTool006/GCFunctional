@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — NexaPay</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="auth-body">
+  <main class="auth-shell">
+    <section class="auth-visual register-visual">
+      <a class="brand brand-light" href="index.html"><span class="brand-mark">N</span><span>NexaPay</span></a>
+      <div class="auth-copy">
+        <span class="eyebrow light">Start today</span>
+        <h1>Create your account and take control.</h1>
+        <p>Your dashboard, deposits, withdrawals and transaction records stay connected in one simple WebApp.</p>
+      </div>
+      <div class="mini-benefits">
+        <span>✓ Responsive on every screen</span>
+        <span>✓ Working demo transaction flow</span>
+        <span>✓ Easy to connect with PHP/MySQL</span>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-form-wrap">
+        <a class="back-link" href="index.html">← Back to website</a>
+        <div class="auth-heading">
+          <h2>Create your account</h2>
+          <p>Fill in the information below.</p>
+        </div>
+        <div class="alert hidden" id="authAlert" role="alert"></div>
+        <form id="registerForm" novalidate>
+          <div class="form-grid two">
+            <label class="field"><span>Full name</span><input type="text" id="fullName" placeholder="Your full name" autocomplete="name" required></label>
+            <label class="field"><span>Mobile number</span><input type="tel" id="mobile" placeholder="+91 98765 43210" autocomplete="tel" required></label>
+          </div>
+          <label class="field"><span>Email address</span><input type="email" id="email" placeholder="you@example.com" autocomplete="email" required></label>
+          <label class="field"><span>Password</span><div class="password-wrap"><input type="password" id="password" placeholder="Minimum 8 characters" autocomplete="new-password" required><button type="button" class="password-toggle" data-target="password">Show</button></div></label>
+          <label class="field"><span>Confirm password</span><div class="password-wrap"><input type="password" id="confirmPassword" placeholder="Repeat your password" autocomplete="new-password" required><button type="button" class="password-toggle" data-target="confirmPassword">Show</button></div></label>
+          <label class="field"><span>Referral code <small>(optional)</small></span><input type="text" id="referral" placeholder="Enter referral code"></label>
+          <label class="check-field terms"><input type="checkbox" id="terms" required> <span>I agree to the Terms and Privacy Policy.</span></label>
+          <button class="btn btn-primary btn-block btn-large" type="submit">Create Account</button>
+        </form>
+        <p class="auth-switch">Already registered? <a href="login.html">Login</a></p>
+      </div>
+    </section>
+  </main>
+  <div class="toast-container" id="toastContainer"></div>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — NexaPay</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="auth-body">
+  <main class="auth-shell">
+    <section class="auth-visual">
+      <a class="brand brand-light" href="index.html"><span class="brand-mark">N</span><span>NexaPay</span></a>
+      <div class="auth-copy">
+        <span class="eyebrow light">Welcome back</span>
+        <h1>Your money dashboard is one login away.</h1>
+        <p>Access deposits, withdrawals, TRS, TR records and your profile from a single responsive workspace.</p>
+      </div>
+      <div class="auth-stat-card">
+        <span>Demo account</span>
+        <strong>demo@nexapay.test</strong>
+        <small>Password: Demo@123</small>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-form-wrap">
+        <a class="back-link" href="index.html">← Back to website</a>
+        <div class="auth-heading">
+          <h2>Login to NexaPay</h2>
+          <p>Enter your account details to continue.</p>
+        </div>
+        <div class="alert hidden" id="authAlert" role="alert"></div>
+        <form id="loginForm" novalidate>
+          <label class="field">
+            <span>Email address</span>
+            <input type="email" id="email" placeholder="you@example.com" autocomplete="email" required>
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <div class="password-wrap">
+              <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" required>
+              <button type="button" class="password-toggle" data-target="password">Show</button>
+            </div>
+          </label>
+          <div class="form-row">
+            <label class="check-field"><input type="checkbox" id="remember"> <span>Remember me</span></label>
+            <button class="link-button" type="button" id="forgotButton">Forgot password?</button>
+          </div>
+          <button class="btn btn-primary btn-block btn-large" type="submit">Login</button>
+        </form>
+        <p class="auth-switch">New here? <a href="register.html">Create an account</a></p>
+      </div>
+    </section>
+  </main>
+  <div class="toast-container" id="toastContainer"></div>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
